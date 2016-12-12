@@ -4,7 +4,7 @@ Python implementation of Tophat algorithms that discovering splice junctions wit
 This is the course project for Bioinformatics(BI3204 2016.02-2016.06) at [SUSTC](http://www.sustc.edu.cn/).
 
 ## Introduction to Tophat algorithms
-<img src="./images/tophat.png" width=700 height=900 />
+<img src="./images/tophat.png" width=700 height=850 />
 
 after mapping RNA sequencing reads to whole genome with Bowtie, some reads are unmappable because they span two or more exons within the transcriptome. 
 Here we use tophat algorithms firstly cut each of those unmappable reads into four parts, for example, 
@@ -17,8 +17,10 @@ python tophat.py
 # input file (cutted and mapped reads): SRR1793917_1_cut.sam 
 # output file (reads split by splice junctions):　SRR1793917_1_split.sam
 ```
-SRR1793917_1_cut.sam 
+### SRR1793917_1_cut.sam 
+
 <img src="./images/split.png" width=700 height=400 />
 
-SRR1793917_1_split.sam
+### SRR1793917_1_split.sam
+
 <img src="./images/splice.png" width=700 height=400 />
