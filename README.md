@@ -14,8 +14,11 @@ an unmappable reads is 100 base pair long, we cut this reads into 1-25, 26-50, 5
 
 ```bash
 python tophat.py
-# cutted and mapped reads: SRR1793917_1_cut.sam
-<img src="./images/split.png" width=700 height=400 />
-# As we only focus on exome sequncing reads, thus, we ignore and exclude the 'N' and intron sequence in hg19.fa 
-# this wil output 25 files: redchr1, redchr2......................
+# input file (cutted and mapped reads): SRR1793917_1_cut.sam 
+# output file (reads split by splice junctions):　SRR1793917_1_split.sam
 ```
+SRR1793917_1_cut.sam 
+<img src="./images/split.png" width=700 height=400 />
+
+SRR1793917_1_split.sam
+<img src="./images/splice.png" width=700 height=400 />
